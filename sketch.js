@@ -59,6 +59,12 @@ function setup() {
 	resetSketch();
 	reset = select('#reset')
   	reset.mousePressed(resetSketch)
+  	home = select('#home')
+  	home.mousePressed(goHome)
+}
+
+function goHome() {
+  open("../index.html", "_self")
 
 }
 
